@@ -1,0 +1,24 @@
+<!-- make this dynamically resize using bootstrap when internet connection is available start -->
+<div id="playground-hidden-div">
+  
+  <!-- HTML5 based Tetris here when button is clicked? -->
+  
+</div>
+<div id="playground-main-div">
+  <h1>Welcome to my Play Ground</h1>
+  <strong>You usually won't find anything in here, just me playing around with some code.</strong>
+  <center>
+    <p>The blue pill below is for <strong>your</strong> entertainment.</p>
+    <button class="btn btn-primary" id="the-blue-pill">Blue Pill</button>
+  </center>
+</div>
+<!-- end -->
+
+
+<script>
+  $(document).ready(function(){
+    $("#the-blue-pill").on("click", function(){
+      console.log("hello");
+    });
+  });
+</script>

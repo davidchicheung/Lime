@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lime</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= csrf_meta_tags %>
+</head>
+<body style="margin-top: 65px;">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <%= link_to "Lime", root_path, :class => "brand" %>
+        <ul class="nav">
+          <% if (request.fullpath == root_path) || (request.fullpath == dashboards_path) %>
+            <li class="active"><%= link_to "Dashboard", root_path %></li>
+          <% else %>
+            <li><%= link_to "Dashboard", root_path %></li>
+          <% end %>
+          
+          <% if request.fullpath == playgrounds_path %>
+            <li class="active"><%= link_to "Play Ground", playgrounds_path %></li>
+          <% else %>
+            <li><%= link_to "Play Ground", playgrounds_path %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>  
+  
+  <%= yield %>
+
+</body>
+</html>
