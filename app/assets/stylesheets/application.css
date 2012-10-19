@@ -88,3 +88,13 @@ body {
 #carousel-wrapper {
   margin-bottom: 25px;
 }
+
+#playground-h1 {
+  margin-left: 44px;
+}
+
+.div-carousel-image {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
