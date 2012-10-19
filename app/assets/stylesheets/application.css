@@ -56,8 +56,17 @@ body {
 }
 
 .div-image {
-  max-height: 55px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
   cursor: pointer;
+  margin-bottom: 15px;
+  max-height: 55px;
+}
+
+.div-image:hover {
+  opacity: 0.4;
 }
 
 #myCarousel {
@@ -66,4 +75,16 @@ body {
 
 .div-carousel-image {
   max-height: 500px;
+}
+
+.row-fluid div:nth-child(12n + 1) {
+  margin-left: 0px;
+}
+
+#gallery-wrapper {
+  margin-left: 10px;
+}
+
+#carousel-wrapper {
+  margin-bottom: 25px;
 }

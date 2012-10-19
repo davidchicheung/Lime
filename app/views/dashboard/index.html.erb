@@ -1,4 +1,4 @@
-<center>
+<center id="carousel-wrapper">
   <div id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
       <% @all_images.each_with_index do |image, i| %>
@@ -19,13 +19,15 @@
   </div>
 </center>
 
-<div class="row-fluid">
-  <% @all_images.each_with_index do |image, i| %>
-    <div class="span1 image-thumbnail" data-imageid="<%= i %>">
-      <%= image_tag image, :class => "div-image" %>
-    </div>
-  <% end %>
-</div>
+<div id="gallery-wrapper">
+  <div class="row-fluid">
+    <% @all_images.each_with_index do |image, i| %>
+      <div class="span1 image-thumbnail" data-imageid="<%= i %>">
+        <%= image_tag image, :class => "div-image" %>
+      </div>
+    <% end %>
+  </div>
+<div>
 
 <script>
   $(document).ready(function(){
